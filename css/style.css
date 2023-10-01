@@ -1,0 +1,162 @@
+/* Start nav */
+.navbar {
+   background-color: var(--dark-color);
+}
+.navbar .navbar-toggler {
+   color: white;
+   font-size: 25px;
+}
+.navbar .navbar-toggler:focus {
+   box-shadow: none;
+}
+.navbar a.nav-link {
+   color: white;
+}
+.navbar a.nav-link.active,
+.navbar a.nav-link:hover {
+   color: var(--green-color);
+}
+.navbar-nav + svg {
+   color: var(--green-color);
+   border-left: 1px solid var(--green-color);
+}
+/* End nav */
+/* Start header */
+header {
+   background-color: var(--dark-color);
+   height: calc(100vh - 70px);
+}
+/* End header */
+/* Start Features */
+.features .text h4 {
+   color: var(--yellow-color);
+}
+.features .icons {
+   height: 200px;
+}
+.features .icons svg:first-of-type {
+   color: var(--section-color);
+   height: 100%;
+}
+.features .icons svg:last-of-type {
+   color: var(--green-color);
+}
+/* End Features */
+/* Start Portofolio */
+.portofolio {
+   background-color: var(--section-color);
+}
+.portofolio li {
+   text-transform: capitalize;
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+   transition: 0.5s;
+}
+.portofolio li:hover {
+   color: var(--red-color);
+}
+.portofolio li.active {
+   background-color: var(--red-color);
+   color: var(--yellow-color);
+}
+.portofolio .image {
+   position: relative;
+}
+.portofolio .image::before {
+   content: "";
+   position: absolute;
+   inset: 50% 0 0 50%;
+   transform: translate(-50%, -50%);
+   width: calc(100% - 8px);
+   height: calc(100% - 8px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 1.25rem;
+   text-transform: capitalize;
+   transition: 0.5s;
+}
+.portofolio .image:hover::before {
+   content: "application";
+   background-color: rgb(51 209 204 / 60%);
+}
+/* End Portofolio */
+/* Start Team */
+.team {
+   background-color: var(--section-color);
+}
+.team h2 {
+   color: var(--yellow-color);
+}
+.team .col .text h3 {
+   background-color: var(--green-color);
+}
+/* End Team */
+/* Start Project */
+.project {
+   background-color: var(--dark-color);
+}
+/* End Project */
+/* Start Plog */
+.plog .col .text {
+   border: 1px solid rgba(0, 0, 0, 0.13);
+   border-top: none;
+}
+/* End Plog */
+/* Start Subscribe */
+.subscribe {
+   background-color: var(--yellow-color);
+}
+a.sub-btn {
+   color: white;
+   background-color: var(--dark-color);
+   transition: 0.5s;
+}
+a.sub-btn:hover {
+   color: white;
+   background-color: #305185;
+}
+/* End Subscribe */
+/* Start Footer */
+footer {
+   background-color: var(--dark-color);
+}
+footer .text span:first-of-type {
+   color: var(--green-color);
+}
+footer .text span:last-of-type {
+   color: var(--yellow-color);
+}
+/* End Footer */
+/* Start login */
+.loading-bar {
+   height: 8px;
+   background-color: #ddd;
+   border-radius: 5px;
+   z-index: 3000;
+   position: sticky;
+   top: 0;
+}
+.loading-bar > span.loaded-part {
+   height: 100%;
+   background-color: var(--red-color);
+}
+@keyframes loading {
+   from {
+      width: 0%;
+   }
+   to {
+      width: 100%;
+   }
+}
+.sign-page {
+   width: 100vw;
+   height: 100vh;
+   background-color: #19283fdb;
+}
+.sign-form {
+   max-width: 1000px;
+   background-color: var(--dark-color);
+}
+/* End login */
